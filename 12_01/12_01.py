@@ -73,7 +73,7 @@ def sum_calibrated_infos(calibrated_info):
 
 def main():
     file_path = only_filepath_argparse()
-    input_data = basic_read(file_path)
+    input_data = basic_read(file_path, str)
     print(f"Calibrate no written words result:{sum_calibrated_infos(calibrate_values_no_written(input_data))}")
     print(f"Calibrate with written words result:{sum_calibrated_infos(calibrate_values_with_written(input_data))}")
 
